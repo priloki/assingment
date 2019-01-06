@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ShowTracker</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/home/ukistu07/Documents/uki4/Programming/assingment2/index.css">
+      <link rel="stylesheet" href="/home/ukistu07/Documents/uki4/Programming/assingment2/css/bootstrap.min.css">
+      <style type="text/css">
+      #Grid {
+          text-align: justify;
+          font-size: 0.1px;
+      }
+
+      #Grid:after {
+          content: '';
+          display: inline-block;
+          width: 100%;
+      }
+
+      #Grid .mix {
+          display: none;
+          opacity: 0;
+          vertical-align: top;
+          margin-bottom: 20px;
+          font-size: 30px;
+          text-align: center;
+          line-height: 200px;
+      }
+
+      #Grid .gap {
+          display: inline-block;
+          width: 200px;
+      }
+          </style>
+  </head>
+
+  <body style="background-color: gray">
+        <nav class="navbar navbar-default  navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"  style="background-color:yellow;">Show<b>Trackr</b></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li id="hover" class="active"><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/Assingment1_priyatharsan.html">Home</a></li>
+          <li id="hover"><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/secondpage.html">Add </a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/fourthpage.html"><span class="glyphicon glyphicon-user"></span> Login</a> </li>
+          <li><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/fifthpage.html"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <div class="container text">
+        <center>
+        <h4>
+        <a href="#" class="filter" data-filter="0-9">0-9</a>&nbsp
+        <a href="#" class="filter" data-filter="a">A</a>&nbsp
+        <a href="#" class="filter" data-filter="b">B</a>&nbsp
+        <a href="#" class="filter" data-filter="c">C</a>&nbsp
+        <a href="#" class="filter" data-filter="d">D</a>&nbsp
+        <a href="#" class="filter" data-filter="e">E</a>&nbsp
+        <a href="#" class="filter" data-filter="f">F</a>&nbsp
+        <a href="#" class="filter" data-filter="g">G</a>&nbsp
+        <a href="#" class="filter" data-filter="h">H</a>&nbsp
+        <a href="#" class="filter" data-filter="i">I</a>&nbsp
+        <a href="#" class="filter" data-filter="j">J</a>&nbsp
+        <a href="#" class="filter" data-filter="k">K</a>&nbsp
+        <a href="#" class="filter" data-filter="l">L</a>&nbsp
+        <a href="#" class="filter" data-filter="m">M</a>&nbsp
+        <a href="#" class="filter" data-filter="n">N</a>&nbsp
+        <a href="#" class="filter" data-filter="o">O</a>&nbsp
+        <a href="#" class="filter" data-filter="p">P</a>&nbsp
+        <a href="#" class="filter" data-filter="q">Q</a>&nbsp
+        <a href="#" class=" filter" data-filter="r">R</a>&nbsp
+        <a href="#" class=" filter" data-filter="s">S</a>&nbsp
+        <a href="#" class=" filter" data-filter="t">T</a>&nbsp
+        <a href="#" class=" filter" data-filter="u">U</a>&nbsp
+        <a href="#" class=" filter" data-filter="v">V</a>&nbsp
+        <a href="#" class=" filter" data-filter="w">W </a>&nbsp
+        <a href="#" class=" filter" data-filter="x">X </a>&nbsp
+        <a href="#" class=" filter" data-filter="y">Y</a>&nbsp
+        <a href="#" class=" filter" data-filter="z">Z</a>&nbsp
+      </h4>
+</center>
+</div>
+<center>
+        <label><button type="button" class="btn filter" data-filter="action">Action</button></label>
+        <label><button type="button" class="btn filter" data-filter="adventure">Adventure</button></label>
+        <label><button type="button" class="btn filter" data-filter="animation">Animation</button></label>
+        <label><button type="button" class="btn filter" data-filter="children">Children</button></label>
+        <label><button type="button" class="btn filter" data-filter="comedy">Comedy</button></label>
+        <label><button type="button" class="btn filter" data-filter="crime">Crime</button></label>
+        <label><button type="button" class="btn filter" data-filter="documentary">Documentary</button></label>
+        <label><button type="button" class="btn filter" data-filter="drama">Drama</button></label>
+        <label><button type="button" class="btn filter" data-filter="family">Family</button></label>
+        <label><button type="button" class="btn filter" data-filter="fantasy">Fantasy</button></label>
+        <label><button type="button" class="btn filter" data-filter="food">Food</button></label>
+        <label><button type="button" class="btn filter" data-filter="home and garden">Home and Garden</button></label><br>
+        <label><button type="button" class="btn filter" data-filter="horror">Horror</button></label>
+        <label><button type="button" class="btn filter" data-filter="miniseries">Mini-Series</button></label>
+        <label><button type="button" class="btn filter" data-filter="mystery">Mystery</button></label>
+        <label><button type="button" class="btn filter" data-filter="news">News</button></label>
+        <label><button type="button" class="btn filter" data-filter="reality">Reality</button></label>
+        <label><button type="button" class="btn filter" data-filter="romance">Romance</button></label>
+        <label><button type="button" class="btn filter" data-filter="fsci-fi">Sci-Fi</button></label>
+        <label><button type="button" class="btn filter" data-filter="sport">Sport</button></label>
+        <label><button type="button" class="btn filter" data-filter="suspense">Suspense</button></label>
+        <label><button type="button" class="btn filter" data-filter="talkshow">Talk Show</button></label>
+        <label><button type="button" class="btn filter" data-filter="thriller">Thriller</button></label>
+        <label><button type="button" class="btn filter" data-filter="travel">Travel</button></label>
+</center>
+      </div>
+
+
+      <div class="container">
+
+
+        <div class="panel panel-default">
+   <div class="panel-heading">TOP 12 SHOWS
+     <!-- <i class="pull-right glyphicon glyphicon-search"></i> -->
+     <input class="form-control.col-lg-2 pull-right" id="myInput" type="text"placeholder="Search.."></div>
+
+   <div class="panel-body" id="Grid">
+  <div class="row">    <!-- 1st cols start -->
+    <div class="col-sm-4 mix children comedy m"><!--  cols  -->
+      <div class="panel panel-primary btn"> <a href="/home/ukistu07/Documents/uki4/Programming/assingment2/thirdpage.html">
+        <div class="panel-body"><img src="/home/ukistu07/Documents/uki4/Programming/assingment2/images/Minions.jpg" class="img-responsive" style="height:450px; width:300px;" alt="Image"></div>
+        <div class="panel-footer"><b>Minions Movie</b><br></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mix action a"> <!--  cols  -->
+      <div class="panel panel-primary btn">
+        <div class="panel-body"><img src="/home/ukistu07/Documents/uki4/Programming/assingment2/images/Avengers_Infinity_War_poster.jpg" class="img-responsive" style="height:450px; width:300px;" alt="Image"></div>
+        <div class="panel-footer"><b>Avengers Infinity War</b></div>
+      </div>
+    </div>
+    <div class="col-sm-4  mix action thriller x"> <!--  cols  -->
+      <div class="panel panel-primary btn">
+        <div class="panel-body"><img src="/home/ukistu07/Documents/uki4/Programming/assingment2/images/xmenphoenix.jpg" class="img-responsive" style="height:450px; width:300px;" alt="Image"></div>
+        <div class="panel-footer"> <b> Xmen dark phoenix</b></div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-4 mix action adventure thriller f"><!--  cols  -->
+      <div class="panel panel-primary btn">
+            <div class="panel-body"><img src="/home/ukistu07/Documents/uki4/Programming/assingment2/images/fastandfurious7.jpg" class="img-responsive" style="height:450px; width:300px;" alt="Image"></div>
+            <div class="panel-footer"><b>Fast & Furious7</b></div>
+          </div>
+        </div>
+        <div class="col-sm-4 mix children animation comedy b"> <!--  cols  -->
+          <div class="panel panel-primary btn">
+            <div class="panel-body"><img src="/home/ukistu07/Documents/uki4/Programming/assingment2/images/ben10.png" class="img-responsive" style="height:450px; width:300px;" alt="Image"></div>
+            <div class="panel-footer"><b>Ben10</b></div>
+          </div>
+        </div>
+        <div class="col-sm-4 mix miniseries animation children d"> <!--  cols  -->
+          <div class="panel panel-primary btn">
+            <div class="panel-body"><img src="/home/ukistu07/Documents/uki4/Programming/assingment2/images/dora.jpg" class="img-responsive" style="height:450px; width:300px;" alt="Image"></div>
+            <div class="panel-footer"><b>Dora </b></div>
+          </div>
+           </div>
+          </div>
+</div><!--ending panel body-->
+</div><!--ending panel-->
+</div>
+ <script src="js/jquery.min.js"></script>
+ <script src="js/jquery.mixitup.min.js "></script>
+
+
+ <script type="text/javascript">
+     $(function() {
+         $('#Grid').mixitup();
+     });
+ </script>
+
+
+  </body>
+</html>

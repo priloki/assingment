@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ShowTracker</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/home/ukistu07/Documents/uki4/Programming/assingment2/index.css">
+      <link rel="stylesheet" href="/home/ukistu07/Documents/uki4/Programming/assingment2/css/bootstrap.min.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.mixitup.min.js "></script>
+      <script>
+      function showName() {
+        var regexp1=new RegExp("[^a-z]",);
+
+    var x = document.getElementById("showName").value;
+    var colorChange = $("#demo");
+
+
+    $(document).ready(function() {
+      if(regexp1.test(x))
+      {
+        document.getElementById("demo").innerHTML = "Invalid TV Show Name";
+        colorChange.css("color","red");
+        colorChange.css("font-size","25px");
+
+      }
+      else{
+        document.getElementById("demo").innerHTML =   x + " has been added."
+        colorChange.css("color","green");
+        colorChange.css("font-size","25px");
+
+
+      }
+});
+  }
+
+      </script>
+  </head>
+  <body style="background-color: gray">
+
+        <nav class="navbar navbar-default  navbar-fixed-top">
+            <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" style="background-color:yellow;">Show<b>Trackr</b></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li id="hover"><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/Assingment1_priyatharsan.html">Home</a></li>
+
+          <li id="hover" class="active"><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/secondpage.html">Add </a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/fourthpage.html"><span class="glyphicon glyphicon-user"></span> Login</a> </li>
+          <li><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/fifthpage.html"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+        </ul>
+                 </div>
+    </nav>
+<br><br><br><br><br><br>
+    <div class="container">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Add to show</div>
+        <div class="panel-body">
+          <div class="form-group">
+          <label class="col-lg-1 control-label" for="name">Name</label>
+          <div class="col-lg-12">
+            <textarea class="form-control" id="showName" placeholder="Add TV show" rows="1" cols="200"></textarea>
+            <br>
+            <p id="demo"></p>
+            <button class="btn btn-info pull-left" onclick="showName()">Add</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    </body>
+    </html>

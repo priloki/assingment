@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ShowTracker</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/home/ukistu07/Documents/uki4/Programming/assingment2/index.css">
+      <link rel="stylesheet" href="/home/ukistu07/Documents/uki4/Programming/assingment2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script language="javascript">
+        function check(form)
+        {
+          let usersArray = [
+            {email:"test0@gmail.com",password:"test0"},
+            {email:"test1@gmail.com",password:"test1"},
+            {email:"test2@gmail.com",password:"test2"},
+            {email:"test3@gmail.com",password:"test3"},
+            {email:"test4@gmail.com",password:"test4"},
+
+          ];
+          usersArray.map((e)=>{
+            if(form.email.value == e.email && form.password.value == e.password){
+                alert("Login Successfull")
+
+            }
+            else {
+              alert("Unsuccessfull")
+            }
+          });
+
+        }
+        </script>
+  </head>
+  <body style="background-color: gray">
+        <nav class="navbar navbar-default  navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" style="background-color:yellow;">Show<b>Trackr</b></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li id="hover"><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/Assingment1_priyatharsan.html">Home</a></li>
+          <li id="hover"><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/secondpage.html">Add </a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/fourthpage.html"><span class="glyphicon glyphicon-user"></span> Login</a> </li>
+          <li><a href="/home/ukistu07/Documents/uki4/Programming/assingment2/fifthpage.html"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+<br><br><br><br><br><br>
+
+  <div class="panel panel-info" id="alin">
+    <div class="panel-heading">  <h4 align="center"><b>Login</b></h4> </div>
+              <div class="panel-body">
+
+        <form class="form-horizontal-center">
+<div class="form-group" align="center">
+  <div class="input-group col-sm-12">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input id="email" type="text" class="form-control" name="email" placeholder="Email" required autofocus >
+  </div>
+  <br>
+  <div class="input-group col-sm-12">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    <input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+  </div>
+  <br>
+  <div class="input-group col-sm-12">
+    <button type="submit" onclick="check(this.form)" value="Login" class="btn btn-success btn-block btn-lg">Log in</button>
+  </div><br>
+  <p><a href="#">Forgot your password?</a></p>
+  <p> <a href="/home/ukistu07/Documents/uki4/Programming/assingment2/fifthpage.html"><small>Don't have an account yet? </small></a> Sign up</p>
+ <div class="or-seperator text-center"><b>or</b></div>
+<div class="input-group col-sm-12">
+  <button type="submit" class="btn btn-primary btn-block btn-lg"><i class="fa fa-facebook-f pull-left" style="font-size:24px"></i>
+Sign in with Facebook</button>
+</div><br>
+<div class="input-group col-sm-12">
+    <button type="submit" class="btn btn-danger btn-block btn-lg"><i class="fa fa-google-plus pull-left" style="font-size:24px"></i>
+Sign in with Google</button>
+  </div>
+
+</div>
+</form>
+</div>
+</div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+     <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

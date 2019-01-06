@@ -1,0 +1,27 @@
+#hover:hover{
+    background-color: #555;
+    color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: red;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+#alin{
+  border-color:lightblue;
+  border-style: solid;
+  width:20%;
+  padding:10px;
+  margin: auto;
+}
